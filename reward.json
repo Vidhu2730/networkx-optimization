@@ -1,0 +1,30 @@
+{
+  "repo": "networkx/networkx",
+  "baseline_sha": "9c1ee6392311d056760714d4126cd6382f75a96f",
+  "candidate_description": "Reduced Python interpreter overhead in betweenness centrality BFS traversal using cached deque methods, adjacency access, and dictionary lookups",
+  "baseline_time_s": {
+    "median": 29.868029578000005,
+    "iqr": 0.8682054709998965,
+    "n_warmup": 2,
+    "n_measured": 4
+  },
+  "candidate_time_s": {
+    "median": 23.602758065499756,
+    "iqr": 1.238032964249669,
+    "n_warmup": 2,
+    "n_measured": 4
+  },
+  "speedup": 1.2654465844675256,
+  "correctness": {
+    "existing_tests_pass": true,
+    "output_equivalent": true,
+    "tolerance": "1e-9 relative",
+    "tolerance_justification": "Optimization preserves exact algorithm semantics"
+  },
+  "environment": {
+    "cpu_model": "model name\t: Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "ram_gb": 12.7,
+    "python_version": "3.12.13",
+    "colab_runtime": "CPU"
+  }
+}
